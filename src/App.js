@@ -1,18 +1,22 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import './App.css';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import ContactForm from "./components/Contact";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div className="Portfolio">
-     <Header />
-     <Hero />
-     <Projects />
-      <Contact />
-    <Footer />
+      <main>
+        <Header />
+        <Hero />
+        <About />
+        <Projects />
+        <ContactForm />
+        <Footer />
+      </main>
     </div>
   );
 }

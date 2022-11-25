@@ -57,13 +57,13 @@ header nav ul li a {
 
 /*Hero section begins*/
 .hero {
-  /* background-image: url("../images/hero-img.jpg"); */
+  background-image: url("./assets/hero/hero-img.jpg");
   background-size: cover;
   display: flex;
   justify-content:  left;
   flex-wrap: wrap;
   align-items: flex-start;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   
 }
@@ -97,12 +97,12 @@ text-shadow: 1px 1px black;
 }
 
 .about-me-img {
-height: 45%;
+height: 60vh;
 width: 25%;
 border-radius: 75%;
 position: absolute;
-left: 55%;
-bottom: -20%;
+left: 55vw;
+bottom: -50vh;
 border: 2px solid var(--tertiary-color);
 }
 /*About Me Ends*/
@@ -110,7 +110,7 @@ border: 2px solid var(--tertiary-color);
 /*My Work Section Begins*/
 .my-work {
 color: var(--tertiary-color);
-display:flex;
+display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 }
@@ -136,8 +136,8 @@ text-align: center;
 
 
 .my-work-img {
-height: 235px;
-width: 670px;
+height: 40vh;
+width: 49vw;
 border: 2px solid var(--tertiary-color);
 }
 
@@ -185,8 +185,9 @@ text-shadow: none;
 }
 
 .about-me-img {
-  height: 45%;
+  height: 45vh;
   width: 30%;
+  border-radius: 75%;
 }
 
 .my-work-img {

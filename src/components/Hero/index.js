@@ -6,7 +6,7 @@ function Hero() {
   <div className="hero-text">
     <h1>Constance Strahan</h1>
     <p>Web Developer</p>
-    <div>
+    {/* <div>
       <a href="https://github.com/ConnieMarie">
         <img className="social-media" src="./assets/images/github-logo.png" alt='github' />
       </a>
@@ -16,7 +16,7 @@ function Hero() {
       <a href="https://twitter.com/strahan_connie">
         <img className="social-media" src="./assets/images/twitter-logo.png" alt='twitter' />
       </a>
-    </div>
+    </div> */}
   </div>
 </section>
 
