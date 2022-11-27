@@ -46,15 +46,10 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  
 }
 
-header nav ul li a {
-  padding: 15px;
-  font-weight: bold;
-  text-shadow: 1px 1px black;
-}
-
-header nav span {
+header nav ul li {
   padding: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -67,17 +62,13 @@ header nav span {
   color: #A5D6E4;
   text-shadow: 1px 1px black; 
 }
-/*Header Ends*/
-
-
-
-
 
 .social-media {
 height: 40px;
 width: 40px;
 margin: 0 10px 15px 0;
 }
+/*Header Ends*/
 
 
 /*About Me Section Begins*/
@@ -158,7 +149,6 @@ display: flex;
 width: 100%;
 height: 25%;
 padding: 10px 35px;
-margin-bottom: 0;
 justify-content: center;
 flex-wrap: wrap;
 /* position: sticky; */

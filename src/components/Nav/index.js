@@ -1,74 +1,27 @@
-import React, {useState} from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
 
-function Nav(props) {
-    // const [navigations] = useState([
-    //     {
-    //         name: 'about Me'
-    //     },
-    //     {
-    //         name: 'portfolio'
-    //     },
-    //     {
-    //         name: 'resume'
-    //     },
-    //     {
-    //         name: 'contact'
-    //     }
-    // ])
-    // const {
-    //     // navigations = [],
-    //     // setCurrentItem,
-    //     // currentItem,
-    //     contactSelected,
-    //     setContactSelected,
-    //   } = props;
-    
-      const [contactSelected, setContactSelected] = useState(false);
-
- 
-
-//   useEffect(() => {
-//     document.title = capitalizeFirstLetter(currentItem.name);
-//   }, [currentItem]);
+function Nav(pages) {
+  // const {
+  //     pages = [],
+  //     page,
+  //     setPage
+  // } = props
 
   return (
     <nav>
       <ul>
         <li>
-          <a href="#about-me" onClick={() => setContactSelected(false)}>
-            About me
-          </a>
+          <a href="#about-me" onClick={() => pages.handleClick("about")}>About Me</a>
         </li>
         <li>
-          <a href="#portfolio" onClick={() => setContactSelected(false)}>
-            Portfolio
-          </a>
+          <a href="#portfolio" onClick={() => pages.handleClick("portfolio")}>Portfolio</a>
         </li>
         <li>
-          <a href="#resume" onClick={() => setContactSelected(false)}>
-            Resume
-          </a>
+          <a href="#resume" onClick={() => pages.handleClick("resume")}>Resume</a>
         </li>
-        <li className={`${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-
-        {/* {navigations.map((navigations) => (
-          <li
-            className={`${currentItem.name === navigations.name && !contactSelected && 'navActive'}`}
-            key={navigations.name}
-          >
-            <span
-              onClick={() => {
-                setCurrentItem(navigations);
-                setContactSelected(true);
-              }}
-            >
-              {capitalizeFirstLetter(navigations.name)}
-            </span>
-          </li>
-        ))} */}
+        <li>
+          <a href="#contact-form" onClick={() => pages.handleClick("contact")}>Contact</a>
+        </li>
       </ul>
     </nav>
   );
