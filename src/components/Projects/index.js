@@ -6,10 +6,11 @@ import weatherDash from '../../assets/projects/weatherdash-img.png';
 import cyberJam from '../../assets/projects/cyberjam-img.png';
 import enthusiast from '../../assets/projects/enthusiast-img.png';
 import teamProfile from '../../assets/projects/team-profile-img.png';
+
 function Projects() {
+
     return (
-        <section className="my-work">
-  <h4>My Work</h4><br />
+        <section className="project">
   <article>
     <a className="project-display" href="https://conniemarie.github.io/run-buddy/">
       <img id="first-project-img" src={runBuddy} alt="screenshot of runbuddy landing page" run buddy />
@@ -21,7 +22,7 @@ function Projects() {
   </article>
   <article className="project-display">
     <a href="https://conniemarie.github.io/horiseon-challenge/">
-      <img className="my-work-img" src={horiseon} alt="screenshot of horiseon landing page" horiseon />
+      <img className="project-img" src={horiseon} alt="screenshot of horiseon landing page" horiseon />
       <div className="project-label">
         <h5>Horiseon</h5>
         <p>Refactor</p>
@@ -30,7 +31,7 @@ function Projects() {
   </article>
   <article className="project-display">
     <a href="https://conniemarie.github.io/portfolio/">
-      <img className="my-work-img" src={portfolio} alt="screenshot of my portfolio landing page" portfolio />
+      <img className="project-img" src={portfolio} alt="screenshot of my portfolio landing page" portfolio />
       <div className="project-label">
         <h5>Portfolio</h5>
         <p>HTML/CSS</p>
@@ -39,7 +40,7 @@ function Projects() {
   </article>
   <article className="project-display">
     <a href="https://conniemarie.github.io/weather-dashboard/">
-      <img className="my-work-img" src={weatherDash} alt="screenshot of my weather app page" weather dashboard />
+      <img className="project-img" src={weatherDash} alt="screenshot of my weather app page" weather dashboard />
       <div className="project-label">
         <h5>Weather Dashboard</h5>
         <p>HTML/CSS/JS/API</p>
@@ -48,7 +49,7 @@ function Projects() {
   </article>
   <article className="project-display">
     <a href="https://conniemarie.github.io/trivia/">
-      <img className="my-work-img" src={cyberJam} alt="screenshot of trivia page" cyber jam trivia />
+      <img className="project-img" src={cyberJam} alt="screenshot of trivia page" cyber jam trivia />
       <div className="project-label">
         <h5>Cyber Jam Trivia</h5>
         <p>HTML/CSS/JS/API</p>
@@ -57,7 +58,7 @@ function Projects() {
   </article>
   <article className="project-display">
     <a href="https://github.com/shanicesauce/enthusiast">
-      <img className="my-work-img" src={enthusiast} alt="screenshot of social app" enthusiast />
+      <img className="project-img" src={enthusiast} alt="screenshot of social app" enthusiast />
       <div className="project-label">
         <h5>Enthusiast</h5>
         <p>HTML/CSS/JS/MySQL/Express</p>
@@ -66,7 +67,7 @@ function Projects() {
   </article>
   <article className="project-display">
     <a href="https://github.com/ConnieMarie/team-profile-generator">
-      <img className="my-work-img" src={teamProfile} alt="screenshot of team-profile-generator" team profile generator />
+      <img className="project-img" src={teamProfile} alt="screenshot of team-profile-generator" team profile generator />
       <div className="project-label">
         <h5>Team Profile Generator</h5>
         <p>HTML/CSS/JS/API/Express</p>

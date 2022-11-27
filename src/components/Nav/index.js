@@ -1,23 +1,77 @@
 import React from "react";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 
+function Nav(props) {
+    // const [navigations] = useState([
+    //     {
+    //         name: 'about Me'
+    //     },
+    //     {
+    //         name: 'portfolio'
+    //     },
+    //     {
+    //         name: 'resume'
+    //     },
+    //     {
+    //         name: 'contact'
+    //     }
+    // ])
+    const {
+        // navigations = [],
+        // setCurrentItem,
+        // currentItem,
+        contactSelected,
+        setContactSelected,
+      } = props;
+    
+    //   const [currentItem, setCurrentItem] = useState(navigations[0]);
 
-function Nav() {
-    return (
-        <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-work">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-    )
+ 
+
+//   useEffect(() => {
+//     document.title = capitalizeFirstLetter(currentItem.name);
+//   }, [currentItem]);
+
+  return (
+    <nav>
+      <ul>
+        <li>
+          <a href="#about-me" onClick={() => setContactSelected(false)}>
+            About me
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio" onClick={() => setContactSelected(false)}>
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a href="#resume" onClick={() => setContactSelected(false)}>
+            Resume
+          </a>
+        </li>
+        <li className={`${contactSelected && 'navActive'}`}>
+            <span href='#contact-me' onClick={() => setContactSelected(true)}>Contact</span>
+          </li>
+
+        {/* {navigations.map((navigations) => (
+          <li
+            className={`${currentItem.name === navigations.name && !contactSelected && 'navActive'}`}
+            key={navigations.name}
+          >
+            <span
+              onClick={() => {
+                setCurrentItem(navigations);
+                setContactSelected(true);
+              }}
+            >
+              {capitalizeFirstLetter(navigations.name)}
+            </span>
+          </li>
+        ))} */}
+      </ul>
+    </nav>
+  );
 }
-
 
 export default Nav;
