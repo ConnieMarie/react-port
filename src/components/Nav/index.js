@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 // import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
@@ -16,15 +16,15 @@ function Nav(props) {
     //         name: 'contact'
     //     }
     // ])
-    const {
-        // navigations = [],
-        // setCurrentItem,
-        // currentItem,
-        contactSelected,
-        setContactSelected,
-      } = props;
+    // const {
+    //     // navigations = [],
+    //     // setCurrentItem,
+    //     // currentItem,
+    //     contactSelected,
+    //     setContactSelected,
+    //   } = props;
     
-    //   const [currentItem, setCurrentItem] = useState(navigations[0]);
+      const [contactSelected, setContactSelected] = useState(false);
 
  
 
@@ -51,7 +51,7 @@ function Nav(props) {
           </a>
         </li>
         <li className={`${contactSelected && 'navActive'}`}>
-            <span href='#contact-me' onClick={() => setContactSelected(true)}>Contact</span>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
 
         {/* {navigations.map((navigations) => (

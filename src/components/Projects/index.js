@@ -10,7 +10,7 @@ import teamProfile from '../../assets/projects/team-profile-img.png';
 function Projects() {
 
     return (
-        <section className="project">
+        <section className="project" id="portfolio">
   <article>
     <a className="project-display" href="https://conniemarie.github.io/run-buddy/">
       <img id="first-project-img" src={runBuddy} alt="screenshot of runbuddy landing page" run buddy />

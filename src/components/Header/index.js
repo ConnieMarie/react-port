@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Nav from "../Nav";
 
 function Header() {
@@ -6,7 +6,7 @@ function Header() {
 
   // const [currentItem, setCurrentItem] = useState(navigations[0]);
 
-  // const [contactSelected, setContactSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <header>
@@ -17,7 +17,10 @@ function Header() {
           </a>
         </h1>
       </div>
-      <Nav />
+      <Nav
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
     </header>
   );
 }
