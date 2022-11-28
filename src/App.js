@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
@@ -25,17 +25,6 @@ function App() {
     }
 ])
 const [currentPage, setCurrentPage] = useState(pages[0]);
-
-const useCurrentPage = pages => {
-  
-  useEffect(() => {
-    document.title = currentPage;
-  },[currentPage]);
-
-  return [currentPage, setCurrentPage];
-};
-
-
 
 
   const handleClick = (pageState) => {
