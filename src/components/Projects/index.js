@@ -11,6 +11,7 @@ function Projects() {
 
     return (
         <section className="project" id="portfolio">
+          <h2 className="projectTitle">Portfolio</h2>
   <article>
     <a className="project-display" href="https://conniemarie.github.io/run-buddy/">
       <img id="first-project-img" src={runBuddy} alt="screenshot of runbuddy landing page" run buddy />

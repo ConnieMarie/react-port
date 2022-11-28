@@ -58,6 +58,10 @@ header nav ul li {
   cursor: pointer;
 }
 
+a:active{
+  background-color: rgb(251, 212, 213, 0.75);
+}
+
 .name-text {
   color: #A5D6E4;
   text-shadow: 1px 1px black; 

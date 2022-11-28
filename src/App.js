@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import "./App.css";
+// import { capitalizeFirstLetter } from "./utils/helpers";
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
     }
 ])
 const [currentPage, setCurrentPage] = useState(pages[0]);
+
+// useEffect(() => {
+//   document.title = capitalizeFirstLetter(currentPage.name);
+// },[currentPage]);
 
 
   const handleClick = (pageState) => {
