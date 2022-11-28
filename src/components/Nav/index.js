@@ -1,11 +1,6 @@
 import React from "react";
 
 function Nav(pages) {
-  // const {
-  //     pages = [],
-  //     page,
-  //     setPage
-  // } = props
 
   return (
     <nav>

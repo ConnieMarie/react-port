@@ -1,12 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import Nav from "../Nav";
 
-function Header() {
-  
-
-  // const [currentItem, setCurrentItem] = useState(navigations[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
+function Header(page) {
 
   return (
     <header>
@@ -17,10 +12,7 @@ function Header() {
           </a>
         </h1>
       </div>
-      <Nav
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
+      <Nav handleClick={page.handleClick} />
     </header>
   );
 }

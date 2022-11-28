@@ -25,17 +25,17 @@ function App() {
     }
 ])
 
-  const [page, setPage] = useState(pages[0]);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
   const handleClick = (pageState) => {
-    setPage(pageState)
+    setCurrentPage(pageState)
   }
 
   return (
     <div>
-      <Header /> 
+      <Header handleClick={handleClick} />
       <main>
         {(() => {
-          switch (page) {
+          switch (currentPage) {
             case 'about':
               return <About handleClick={handleClick} />
             case 'portfolio':
