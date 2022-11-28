@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import "./App.css";
-// import { render } from "@testing-library/react";
+
 
 function App() {
   
@@ -24,8 +24,20 @@ function App() {
         name: 'contact'
     }
 ])
+const [currentPage, setCurrentPage] = useState(pages[0]);
 
-  const [currentPage, setCurrentPage] = useState(pages[0]);
+const useCurrentPage = pages => {
+  
+  useEffect(() => {
+    document.title = currentPage;
+  },[currentPage]);
+
+  return [currentPage, setCurrentPage];
+};
+
+
+
+
   const handleClick = (pageState) => {
     setCurrentPage(pageState)
   }

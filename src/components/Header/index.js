@@ -1,7 +1,9 @@
 import React from "react";
 import Nav from "../Nav";
 
-function Header(page) {
+
+
+function Header(page) {  
 
   return (
     <header>
