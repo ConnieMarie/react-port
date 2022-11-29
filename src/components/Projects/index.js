@@ -20,8 +20,7 @@ function Projects() {
             id="first-project-img"
             src={runBuddy}
             alt="screenshot of runbuddy landing page"
-            run
-            buddy
+           
           />
           <div className="project-label">
             <h5>Run Buddy</h5>
@@ -35,7 +34,7 @@ function Projects() {
             className="project-img"
             src={horiseon}
             alt="screenshot of horiseon landing page"
-            horiseon
+            
           />
           <div className="project-label">
             <h5>Horiseon</h5>
@@ -49,7 +48,7 @@ function Projects() {
             className="project-img"
             src={portfolio}
             alt="screenshot of my portfolio landing page"
-            portfolio
+            
           />
           <div className="project-label">
             <h5>Portfolio</h5>
@@ -63,8 +62,7 @@ function Projects() {
             className="project-img"
             src={weatherDash}
             alt="screenshot of my weather app page"
-            weather
-            dashboard
+            
           />
           <div className="project-label">
             <h5>Weather Dashboard</h5>
@@ -78,9 +76,7 @@ function Projects() {
             className="project-img"
             src={cyberJam}
             alt="screenshot of trivia page"
-            cyber
-            jam
-            trivia
+            
           />
           <div className="project-label">
             <h5>Cyber Jam Trivia</h5>
@@ -94,7 +90,7 @@ function Projects() {
             className="project-img"
             src={enthusiast}
             alt="screenshot of social app"
-            enthusiast
+            
           />
           <div className="project-label">
             <h5>Enthusiast</h5>
@@ -108,9 +104,7 @@ function Projects() {
             className="project-img"
             src={teamProfile}
             alt="screenshot of team-profile-generator"
-            team
-            profile
-            generator
+           
           />
           <div className="project-label">
             <h5>Team Profile Generator</h5>

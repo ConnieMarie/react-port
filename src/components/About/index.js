@@ -4,18 +4,26 @@ import selfImage from "../../assets/self/self-img.jpg";
 function About() {
   return (
     <section className="about-me">
-      <h2>About Me</h2>
-      <div>        
-        <p>
-          This will be the about me section where I get very uncomfortable
-          because I hate describing myself. I have no idea what to write here. I
-          love my life, but I feel others would be bored reading about it. I
-          love my partner and my pets and my days are consumed by caring for
-          them and this new venture I am on to learn something I will hopefully
-          be good at and find financial independence.
-        </p>
-        <img src={selfImage} className="about-me-img" alt="myself" />
+      <div  className="about-me-container">  
+      <h2 className="pageTitle">About Me</h2>
+        
+      <img src={selfImage} className="about-me-img" alt="myself" />
       </div>
+        <p>
+          I grew up in a blue collar family where I learned the only way to stay afloat
+          was to work hard and go without. I never really knew what exactly what I wanted 
+          to do with my life, but I knew how to put in hard labor and make a dollar stretch.
+          I have always loved learning new things and getting my hands dirty. Growing up
+          during the tech boom, I have never had much issue keeping up new technologies. I like puzzles,
+          problem solving, and figuring out how things work or why they stopped working. After many years 
+          of working in mostly male dominated blue collar and service fields, I finally had an epiphany.
+          I have often dreamed of gaining an engineering degree or becoming an ASC certified mechanic,
+          but what I really love is computers and web technologies. I am not interested in working just to stay afloat,
+          I want to move onward and upward. I took a leap into the unknown to find
+          out if I can enter a field that inspires me.
+        </p>
+        
+        
     </section>
   );
 }

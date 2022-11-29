@@ -16,7 +16,6 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Header begins*/
 header {
   padding: 20px 35px;
   background-color: var(--primary-color);
@@ -36,6 +35,7 @@ header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 header a {
@@ -80,35 +80,38 @@ header nav ul li {
   width: 40px;
   margin: 0 10px 15px 0;
 }
-/*Header Ends*/
 
-/*About Me Section Begins*/
-.about-me {
-  color: var(--secondary-color);
-  width: 35%;
-  font-size: larger;
-  text-align: right;
-  margin-left: 10%;
-  margin-top: 10%;
+.about-me-container {
+  margin: auto;
+  width: 12%;
+  align-items: center;
+  
 }
 
-.about-me h3 {
+.about-me p {
+  color: var(--secondary-color);
+  width: 80%;
+  font-size: larger;
+  text-align: center;
+  margin: auto;
+  padding: 3%;
+}
+
+.about-me h2 {
   text-shadow: 1px 1px black;
+  margin: auto;
+  padding: 10%;
 }
 
 .about-me-img {
-  height: 50vh;
-  width: 40%;
+  height: 300px;
+  width: 200px;
   border-radius: 75%;
-  bottom: 15vw;
-  position: relative;
-  left: 25vw;
-
+  align-items: center;
   border: 2px solid var(--tertiary-color);
 }
-/*About Me Ends*/
 
-/*My Work Section Begins*/
+
 .project {
   color: var(--tertiary-color);
   display: flex;
@@ -148,9 +151,51 @@ header nav ul li {
   left: 21%;
   border: 2px solid var(--tertiary-color);
 }
-/*My Work Section Ends*/
 
-/*Footer Section Begings*/
+.qr-container p {
+  color: var(--secondary-color);
+  width: 80%;
+  font-size: larger;
+  text-align: center;
+  margin: auto;
+  padding: 3%;
+}
+
+.resume-proficiencies {
+  color: #a5d6e4;
+  text-shadow: 1px 1px black;
+  margin: auto;
+  
+}
+
+.resume-proficiencies h3 {
+  color: var(--secondary-color);
+  width: 80%;
+  font-size: larger;
+  
+  margin: auto;
+  padding: 3%;
+  margin:auto;
+  padding: 3%;
+  text-align: center;
+}
+
+.resume-proficiencies p {
+  color: var(--secondary-color);
+  width: 50%;
+  font-size: larger;
+  
+  margin: auto;
+  padding: 3%;
+}
+
+.resume-proficiencies li {
+  color: #a5d6e4;
+  text-shadow: 1px 1px black;
+  margin: auto;
+  width: 50%;
+}
+
 .footer {
   background-color: var(--primary-color);
   display: flex;
@@ -159,7 +204,6 @@ header nav ul li {
   padding: 10px 35px;
   justify-content: center;
   flex-wrap: wrap;
-  /* position: sticky; */
 }
 
 button {
@@ -181,6 +225,10 @@ form {
   display: inline-block;
   flex-wrap: wrap;
   
+}
+.form-container {
+  margin: auto;
+  width: 50%;
 }
 
 label {
@@ -220,9 +268,12 @@ textarea {
   color: var(--primary-color);
   text-shadow: none;
 }
-/*Footer Section Ends*/
 
-/*Media Queries Begin*/
+.qr-container {
+  margin: auto;
+  width: 30%;
+}
+
 @media screen and (max-width: 980px) {
   .project-img {
     height: 250px;

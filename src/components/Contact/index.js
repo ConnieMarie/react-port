@@ -37,7 +37,7 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <section className='form-container'>
       <h1 data-testid="h1tag" className='pageTitle'>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
