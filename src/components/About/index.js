@@ -4,8 +4,8 @@ import selfImage from "../../assets/self/self-img.jpg";
 function About() {
   return (
     <section className="about-me">
-      <div>
-        <h3>About Me</h3>        
+      <h2>About Me</h2>
+      <div>        
         <p>
           This will be the about me section where I get very uncomfortable
           because I hate describing myself. I have no idea what to write here. I

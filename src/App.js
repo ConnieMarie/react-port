@@ -6,30 +6,11 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import "./App.css";
-// import { capitalizeFirstLetter } from "./utils/helpers";
 
 
 function App() {
-  
-  const [pages] = useState([
-    {
-        name: 'about'
-    },
-    {
-        name: 'portfolio'
-    },
-    {
-        name: 'resume'
-    },
-    {
-        name: 'contact'
-    }
-])
-const [currentPage, setCurrentPage] = useState(pages[0]);
 
-// useEffect(() => {
-//   document.title = capitalizeFirstLetter(currentPage.name);
-// },[currentPage]);
+const [currentPage, setCurrentPage] = useState('about');
 
 
   const handleClick = (pageState) => {
@@ -38,7 +19,7 @@ const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
     <div>
-      <Header handleClick={handleClick} />
+      <Header handleClick={handleClick} page={currentPage} />
       <main>
         {(() => {
           switch (currentPage) {

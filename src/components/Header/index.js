@@ -3,7 +3,8 @@ import Nav from "../Nav";
 
 
 
-function Header(page) {  
+function Header(props) {  
+  console.log(props)
 
   return (
     <header>
@@ -14,7 +15,7 @@ function Header(page) {
           </a>
         </h1>
       </div>
-      <Nav handleClick={page.handleClick} />
+      <Nav handleClick={props.handleClick} page={props.page}/>
     </header>
   );
 }

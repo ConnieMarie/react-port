@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #210A72;
-  --secondary-color: #E68244;
-  --tertiary-color: #FBD4D5;
-  --footer-color: #57F1B1;
+  --primary-color: #210a72;
+  --secondary-color: #e68244;
+  --tertiary-color: #fbd4d5;
+  --footer-color: #57f1b1;
 }
 
 * {
@@ -13,11 +13,11 @@
 
 body {
   background-color: var(--primary-color);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Header begins*/
-header{
+header {
   padding: 20px 35px;
   background-color: var(--primary-color);
   display: flex;
@@ -31,13 +31,20 @@ header{
   z-index: 9999;
 }
 
+.pageTitle {
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 header a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
-header nav{
-  margin: 0 10px; 
+header nav {
+  margin: 0 10px;
 }
 
 header nav ul {
@@ -46,7 +53,6 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  
 }
 
 header nav ul li {
@@ -58,62 +64,61 @@ header nav ul li {
   cursor: pointer;
 }
 
-a:active{
+.active {
   background-color: rgb(251, 212, 213, 0.75);
+  border-radius: 3px;
+  padding: 0.25rem 1rem;
 }
 
 .name-text {
-  color: #A5D6E4;
-  text-shadow: 1px 1px black; 
+  color: #a5d6e4;
+  text-shadow: 1px 1px black;
 }
 
 .social-media {
-height: 40px;
-width: 40px;
-margin: 0 10px 15px 0;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 15px 0;
 }
 /*Header Ends*/
 
-
 /*About Me Section Begins*/
 .about-me {
-color: var(--secondary-color);
-width: 35%;
-font-size: larger;
-text-align: right;
-margin-left: 10%;
-margin-top: 10%;
-
+  color: var(--secondary-color);
+  width: 35%;
+  font-size: larger;
+  text-align: right;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 .about-me h3 {
-text-shadow: 1px 1px black;
-
+  text-shadow: 1px 1px black;
 }
 
 .about-me-img {
-height: 50vh;
-width: 40%;
-border-radius: 75%;
-bottom: 15vw;
-position: relative;
-left: 25vw;
+  height: 50vh;
+  width: 40%;
+  border-radius: 75%;
+  bottom: 15vw;
+  position: relative;
+  left: 25vw;
 
-border: 2px solid var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
 }
 /*About Me Ends*/
 
 /*My Work Section Begins*/
 .project {
-color: var(--tertiary-color);
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project h4 {
-text-shadow: 1px 1px black;
-text-align: center;
+  text-shadow: 1px 1px black;
+  text-align: center;
 }
 
 .project-display {
@@ -130,107 +135,153 @@ text-align: center;
   padding-right: 20px;
 }
 
-
 .project-img {
-height: 40vh;
-width: 49vw;
-border: 2px solid var(--tertiary-color);
+  height: 40vh;
+  width: 49vw;
+  border: 2px solid var(--tertiary-color);
 }
 
 #first-project-img {
-height: 95%;
-width: 58%;
-position: relative;
-left: 21%;
-border: 2px solid var(--tertiary-color);
+  height: 95%;
+  width: 58%;
+  position: relative;
+  left: 21%;
+  border: 2px solid var(--tertiary-color);
 }
 /*My Work Section Ends*/
 
 /*Footer Section Begings*/
 .footer {
-background-color: var(--primary-color);
-display: flex;
-width: 100%;
-height: 25%;
-padding: 10px 35px;
-justify-content: center;
-flex-wrap: wrap;
-/* position: sticky; */
+  background-color: var(--primary-color);
+  display: flex;
+  width: 100%;
+  height: 25%;
+  padding: 10px 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* position: sticky; */
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: var(--tertiary-color);
+}
+
+form {
+  width: 40%;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  flex-wrap: wrap;
+  
+}
+
+label {
+  padding: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  text-shadow: 1px 1px black;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin: 10px;
+  border: 2px solid var(--tertiary-color);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  display: block;
+  justify-content: space-between;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid var(--tertiary-color);
+	padding: 5px;
+  margin: 10px;
 }
 
 .contact {
-color: var(--primary-color);
-text-shadow: 1px 1px black;
+  color: var(--primary-color);
+  text-shadow: 1px 1px black;
 }
 
 .contact h4 a {
-color: var(--primary-color);
-text-shadow: none;
+  color: var(--primary-color);
+  text-shadow: none;
 }
 /*Footer Section Ends*/
 
 /*Media Queries Begin*/
 @media screen and (max-width: 980px) {
+  .project-img {
+    height: 250px;
+    width: 200px;
+  }
 
-.project-img {
-  height: 250px;
-  width: 200px;
-}
+  .about-me-img {
+    height: 45vh;
+    width: 50%;
+    border-radius: 75%;
+    bottom: 40vh;
+  }
 
-.about-me-img {
-  height: 45vh;
-  width: 50%;
-  border-radius: 75%;
-  bottom: 40vh;
-}
-
-.project-img {
-  height: 250px;
-  width: 485px;
-}
-
+  .project-img {
+    height: 250px;
+    width: 485px;
+  }
 }
 
 @media screen and (max-width: 768px) {
- .name-text {
-  padding: 35%;
- }
+  .name-text {
+    padding: 35%;
+  }
 
- .about-me-img {
-  height: 45%;
-  width: 35%;
-  left: 52%;
- }
+  .about-me-img {
+    height: 45%;
+    width: 35%;
+    left: 52%;
+  }
 
- .project-img {
-  height: 200px;
-  width: 380px;
- }
+  .project-img {
+    height: 200px;
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 575px) {
- .name-text {
-  padding: 30%;
-  bottom: -12%;
- }
+  .name-text {
+    padding: 30%;
+    bottom: -12%;
+  }
 
- .about-me-img {
-  height: 39%;
-  width: 39%;
-  left: 52%;
-  top: 100%;
- }
+  .about-me-img {
+    height: 39%;
+    width: 39%;
+    left: 52%;
+    top: 100%;
+  }
 
- #first-project-img {
-  height: 85%;
-  width: 90%;
-  position: relative;
-  left: 5%;
-}
+  #first-project-img {
+    height: 85%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+  }
 
-.project-img {
-height: 143px;
-width: 285px;
-position: relative;
-}
+  .project-img {
+    height: 143px;
+    width: 285px;
+    position: relative;
+  }
 }
