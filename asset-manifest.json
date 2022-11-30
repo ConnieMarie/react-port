@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-port/static/css/main.64b8cfd0.css",
+    "main.js": "/react-port/static/js/main.6f4348ac.js",
+    "static/js/787.510e8dec.chunk.js": "/react-port/static/js/787.510e8dec.chunk.js",
+    "static/media/run-buddy_img.png": "/react-port/static/media/run-buddy_img.c83e944eb6c99dcd44b9.png",
+    "static/media/self-img.jpg": "/react-port/static/media/self-img.b21de4a4beb984c33714.jpg",
+    "static/media/oh-snap-img.png": "/react-port/static/media/oh-snap-img.6fe12f446302bc0df5a7.png",
+    "static/media/weatherdash-img.png": "/react-port/static/media/weatherdash-img.f397b7eb6810858bc788.png",
+    "static/media/contact-card-img.png": "/react-port/static/media/contact-card-img.c4402b97bb9c6a638781.png",
+    "static/media/twitter-logo.png": "/react-port/static/media/twitter-logo.16d7cf3742c8ecd32518.png",
+    "static/media/enthusiast-img.png": "/react-port/static/media/enthusiast-img.8877d267ffeae98cadd1.png",
+    "static/media/cyberjam-img.png": "/react-port/static/media/cyberjam-img.53380e8fa918df914974.png",
+    "static/media/techietalkss1.png": "/react-port/static/media/techietalkss1.ba1299baab33dd3537fb.png",
+    "static/media/github-logo.png": "/react-port/static/media/github-logo.79676e58d7b46fdf1331.png",
+    "static/media/text-editor-img.png": "/react-port/static/media/text-editor-img.a247c62c2df8f4392e54.png",
+    "static/media/stackoverflow-logo.png": "/react-port/static/media/stackoverflow-logo.56e0f1cd17fc554d12e1.png",
+    "static/media/linkedin_logo.png": "/react-port/static/media/linkedin_logo.68ac41e1459436bfd38f.png",
+    "index.html": "/react-port/index.html",
+    "main.64b8cfd0.css.map": "/react-port/static/css/main.64b8cfd0.css.map",
+    "main.6f4348ac.js.map": "/react-port/static/js/main.6f4348ac.js.map",
+    "787.510e8dec.chunk.js.map": "/react-port/static/js/787.510e8dec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64b8cfd0.css",
+    "static/js/main.6f4348ac.js"
+  ]
+}
