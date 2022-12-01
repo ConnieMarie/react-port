@@ -1,117 +1,149 @@
 import React from "react";
 import runBuddy from "../../assets/projects/run-buddy_img.png";
-import horiseon from "../../assets/projects/horiseon_img.png";
-import portfolio from "../../assets/projects/portfolio_img.png";
+import ohSnap from "../../assets/projects/oh-snap-img.png";
 import weatherDash from "../../assets/projects/weatherdash-img.png";
 import cyberJam from "../../assets/projects/cyberjam-img.png";
 import enthusiast from "../../assets/projects/enthusiast-img.png";
-import teamProfile from "../../assets/projects/team-profile-img.png";
+import textEditor from "../../assets/projects/text-editor-img.png";
+import techieTalk from "../../assets/projects/techietalkss1.png";
+import contactCard from "../../assets/projects/contact-card-img.png";
+import gitHub from "../../assets/socials/github-logo.png";
 
 function Projects() {
   return (
     <section className="project" id="portfolio">
       <h2 className="pageTitle">Portfolio</h2>
-      <article>
-        <a
-          className="project-display"
-          href="https://conniemarie.github.io/run-buddy/"
-        >
-          <img
-            id="first-project-img"
-            src={runBuddy}
-            alt="screenshot of runbuddy landing page"
-           
-          />
-          <div className="project-label">
-            <h5>Run Buddy</h5>
-            <p>HTML/CSS</p>
-          </div>
-        </a>
-      </article>
+      <div className="project-container">
       <article className="project-display">
-        <a href="https://conniemarie.github.io/horiseon-challenge/">
+          <a href="https://github.com/ConnieMarie/react-port">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
           <img
             className="project-img"
-            src={horiseon}
-            alt="screenshot of horiseon landing page"
-            
+            src={ohSnap}
+            alt="screenshot of J.A.T.E landing page"
           />
-          <div className="project-label">
-            <h5>Horiseon</h5>
-            <p>Refactor</p>
-          </div>
-        </a>
-      </article>
-      <article className="project-display">
-        <a href="https://conniemarie.github.io/portfolio/">
+          <a href="https://conniemarie.github.io/photo-port">
+            <div className="project-label">
+              <h5>Oh Snap!</h5>
+              <p>HTML/CSS/JS/React</p>
+            </div>
+          </a>
+        </article>
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/PWA-text-editor">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
           <img
             className="project-img"
-            src={portfolio}
-            alt="screenshot of my portfolio landing page"
-            
+            src={textEditor}
+            alt="screenshot of J.A.T.E landing page"
           />
-          <div className="project-label">
-            <h5>Portfolio</h5>
-            <p>HTML/CSS</p>
-          </div>
-        </a>
-      </article>
-      <article className="project-display">
-        <a href="https://conniemarie.github.io/weather-dashboard/">
+          <a href="https://agile-forest-22662.herokuapp.com/">
+            <div className="project-label">
+              <h5>J.A.T.E</h5>
+              <p>PWA/Express/Webpack</p>
+            </div>
+          </a>
+        </article>
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/contact-card">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
           <img
             className="project-img"
-            src={weatherDash}
-            alt="screenshot of my weather app page"
-            
+            src={contactCard}
+            alt="screenshot of team-profile-generator"
           />
-          <div className="project-label">
-            <h5>Weather Dashboard</h5>
-            <p>HTML/CSS/JS/API</p>
-          </div>
-        </a>
-      </article>
-      <article className="project-display">
-        <a href="https://conniemarie.github.io/trivia/">
-          <img
-            className="project-img"
-            src={cyberJam}
-            alt="screenshot of trivia page"
-            
-          />
-          <div className="project-label">
-            <h5>Cyber Jam Trivia</h5>
-            <p>HTML/CSS/JS/API</p>
-          </div>
-        </a>
-      </article>
-      <article className="project-display">
-        <a href="https://github.com/shanicesauce/enthusiast">
+          <a href="https://blooming-journey-73503.herokuapp.com/">
+            <div className="project-label">
+              <h5>Contact Card</h5>
+              <p>PWA/Express/Webpack</p>
+            </div>
+          </a>
+        </article>
+        
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/enthusiast">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
           <img
             className="project-img"
             src={enthusiast}
             alt="screenshot of social app"
-            
           />
-          <div className="project-label">
-            <h5>Enthusiast</h5>
-            <p>HTML/CSS/JS/MySQL/Express</p>
-          </div>
-        </a>
-      </article>
-      <article className="project-display">
-        <a href="https://github.com/ConnieMarie/team-profile-generator">
+          <a href="https://afternoon-plateau-77681.herokuapp.com/">
+            <div className="project-label">
+              <h5>Enthusiast</h5>
+              <p>HTML/CSS/JS/MySQL/Express</p>
+            </div>
+          </a>
+        </article>
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/techie-talk-tech-blog">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
           <img
             className="project-img"
-            src={teamProfile}
-            alt="screenshot of team-profile-generator"
-           
+            src={techieTalk}
+            alt="screenshot of techie talk landing page"
           />
-          <div className="project-label">
-            <h5>Team Profile Generator</h5>
-            <p>HTML/CSS/JS/API/Express</p>
-          </div>
-        </a>
-      </article>
+          <a href="https://morning-spire-98359.herokuapp.com/">
+            <div className="project-label">
+              <h5>Techie Talk</h5>
+              <p>MVC/MySQL/Express</p>
+            </div>
+          </a>
+        </article>
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/cyber-jam-trivia">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
+          <img
+            className="project-img"
+            src={cyberJam}
+            alt="screenshot of trivia page"
+          />
+          <a href="https://conniemarie.github.io/trivia/">
+            <div className="project-label">
+              <h5>Cyber Jam Trivia</h5>
+              <p>HTML/CSS/JS/API</p>
+            </div>
+          </a>
+        </article>
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/weather-dashboard">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
+          <img
+            className="project-img"
+            src={weatherDash}
+            alt="screenshot of my weather app page"
+          />
+          <a href="https://conniemarie.github.io/weather-dashboard/">
+            <div className="project-label">
+              <h5>Weather Dashboard</h5>
+              <p>HTML/CSS/JS/API</p>
+            </div>
+          </a>
+        </article>
+        <article className="project-display">
+          <a href="https://github.com/ConnieMarie/run-buddy">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
+          <img
+            className="project-img"
+            src={runBuddy}
+            alt="screenshot of runbuddy landing page"
+          />
+          <a href="https://conniemarie.github.io/run-buddy/">
+            <div className="project-label">
+              <h5>Run Buddy</h5>
+              <p>HTML/CSS</p>
+            </div>
+          </a>
+        </article>
+      </div>
     </section>
   );
 }

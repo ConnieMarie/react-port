@@ -4,7 +4,6 @@ import Nav from "../Nav";
 
 
 function Header(props) {  
-  console.log(props)
 
   return (
     <header>

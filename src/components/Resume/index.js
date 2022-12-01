@@ -1,17 +1,16 @@
 import React from "react";
-import resumeQR from "../../assets/resume/resumeQR.png";
 
 function Resume() {
   return (
     <section>
       <div className="qr-container">
         <h2 className="pageTitle">Resume</h2>
-        <a href="https://docs.google.com/document/d/11RKxzqlhIDgkm128CqroQ3oyR-LCtfrKX2ykxZUhIWU/edit?usp=sharing">
-          <img src={resumeQR} alt="resume QR code" />
-        </a>
+        <a href="https://drive.google.com/file/d/1UgXYQUj7jurcQuy6Clwm2hLP-CUtMX-Q/view?usp=sharing">
         <p>
-          Please scan or click the above QR code to view or download my Resume
+          Please click the here to view or download my resume
         </p>
+        </a>
+        
       </div>
       <div className="resume-proficiencies">
       <h3>

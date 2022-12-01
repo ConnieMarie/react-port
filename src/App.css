@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #210a72;
-  --secondary-color: #e68244;
-  --tertiary-color: #fbd4d5;
-  --footer-color: #57f1b1;
+  --primary: #210a72;
+  --secondary: #e68244;
+  --tertiary: #fbd4d5;
+  --quaternary: #57f1b1;
 }
 
 * {
@@ -12,13 +12,13 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 header {
   padding: 20px 35px;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -31,16 +31,18 @@ header {
 }
 
 .pageTitle {
-  color: var(--tertiary-color);
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 10px;
+  color: var(--tertiary);
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin: auto;
+  padding: 3%;
+  width: 50%;
+  display: block;
 }
 
 header a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--secondary);
 }
 
 header nav {
@@ -56,12 +58,17 @@ header nav ul {
 }
 
 header nav ul li {
-  padding: 15px;
+  margin: 15px;
   font-weight: bold;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--secondary);
   text-shadow: 1px 1px black;
   cursor: pointer;
+  transition: transform ease 300ms;
+}
+
+header nav ul li:hover {
+  transform: translate(0, -1px);
 }
 
 .active {
@@ -72,24 +79,28 @@ header nav ul li {
 
 .name-text {
   color: #a5d6e4;
-  text-shadow: 1px 1px black;
 }
 
 .social-media {
   height: 40px;
   width: 40px;
   margin: 0 10px 15px 0;
+  transition: transform ease 300ms;
+}
+
+.social-media:hover {
+  box-shadow: 0 0 10px var(--secondary);
+  transform: translate(0, -1px);
 }
 
 .about-me-container {
   margin: auto;
   width: 12%;
   align-items: center;
-  
 }
 
 .about-me p {
-  color: var(--secondary-color);
+  color: var(--secondary);
   width: 80%;
   font-size: larger;
   text-align: center;
@@ -100,7 +111,6 @@ header nav ul li {
 .about-me h2 {
   text-shadow: 1px 1px black;
   margin: auto;
-  padding: 10%;
 }
 
 .about-me-img {
@@ -108,40 +118,60 @@ header nav ul li {
   width: 200px;
   border-radius: 75%;
   align-items: center;
-  border: 2px solid var(--tertiary-color);
+  border: 2px solid var(--tertiary);
 }
 
-
-.project {
-  color: var(--tertiary-color);
+.project-container {
+  color: var(--tertiary);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.project h4 {
-  text-shadow: 1px 1px black;
-  text-align: center;
-}
-
 .project-display {
   position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid var(--tertiary);
 }
 
 .project-label {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  border-radius: 10px;
   background-color: rgb(251, 212, 213, 0.75);
-  color: var(--primary-color);
+  color: var(--primary);
   padding-left: 20px;
   padding-right: 20px;
+  transition: transform ease 300ms;
+}
+
+.project-label:hover {
+  box-shadow: 0 0 10px var(--secondary);
+  transform: translate(0, -1px);
+}
+
+.gitHub-repo {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 15px 0;
+  transition: transform ease 300ms;
+}
+
+.gitHub-repo:hover {
+  box-shadow: 0 0 10px var(--secondary);
+  transform: translate(0, -1px);
 }
 
 .project-img {
   height: 40vh;
   width: 49vw;
-  border: 2px solid var(--tertiary-color);
 }
 
 #first-project-img {
@@ -149,11 +179,11 @@ header nav ul li {
   width: 58%;
   position: relative;
   left: 21%;
-  border: 2px solid var(--tertiary-color);
+  border: 2px solid var(--tertiary);
 }
 
 .qr-container p {
-  color: var(--secondary-color);
+  color: var(--secondary);
   width: 80%;
   font-size: larger;
   text-align: center;
@@ -165,26 +195,25 @@ header nav ul li {
   color: #a5d6e4;
   text-shadow: 1px 1px black;
   margin: auto;
-  
 }
 
 .resume-proficiencies h3 {
-  color: var(--secondary-color);
+  color: var(--secondary);
   width: 80%;
   font-size: larger;
-  
+
   margin: auto;
   padding: 3%;
-  margin:auto;
+  margin: auto;
   padding: 3%;
   text-align: center;
 }
 
 .resume-proficiencies p {
-  color: var(--secondary-color);
+  color: var(--secondary);
   width: 50%;
   font-size: larger;
-  
+
   margin: auto;
   padding: 3%;
 }
@@ -197,7 +226,7 @@ header nav ul li {
 }
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   display: flex;
   width: 100%;
   height: 25%;
@@ -210,12 +239,18 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--tertiary-color);
+  background-color: var(--tertiary);
+  transition: transform ease 300ms;
+}
+
+button:hover {
+  box-shadow: 0 0 10px var(--secondary);
+  transform: translate(0, -1px);
 }
 
 form {
@@ -224,7 +259,6 @@ form {
   margin-right: 10px;
   display: inline-block;
   flex-wrap: wrap;
-  
 }
 .form-container {
   margin: auto;
@@ -235,7 +269,7 @@ label {
   padding: 15px;
   font-weight: bold;
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--tertiary);
   text-shadow: 1px 1px black;
 }
 
@@ -243,7 +277,7 @@ input {
   font-size: 1rem;
   padding: 0.25rem;
   margin: 10px;
-  border: 2px solid var(--tertiary-color);
+  border: 2px solid var(--tertiary);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
@@ -252,21 +286,26 @@ input {
 }
 
 textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid var(--tertiary-color);
-	padding: 5px;
+  width: 600px;
+  height: 120px;
+  border: 3px solid var(--tertiary);
+  padding: 5px;
   margin: 10px;
 }
 
 .contact {
-  color: var(--primary-color);
+  color: var(--primary);
   text-shadow: 1px 1px black;
 }
 
 .contact h4 a {
-  color: var(--primary-color);
+  color: var(--primary);
   text-shadow: none;
+}
+
+.error-text {
+  color: #57f1b1;
+  padding: 5%;
 }
 
 .qr-container {
