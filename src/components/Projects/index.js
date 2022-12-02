@@ -15,7 +15,7 @@ function Projects() {
       <h2 className="pageTitle">Portfolio</h2>
       <div className="project-container">
       <article className="project-display">
-          <a href="https://github.com/ConnieMarie/react-port">
+          <a href="https://github.com/ConnieMarie/photo-port">
             <img className="gitHub-repo" src={gitHub} alt="github logo" />
           </a>
           <img
@@ -104,7 +104,7 @@ function Projects() {
             src={cyberJam}
             alt="screenshot of trivia page"
           />
-          <a href="https://conniemarie.github.io/trivia/">
+          <a href="https://conniemarie.github.io/cyber-jam-trivia/">
             <div className="project-label">
               <h5>Cyber Jam Trivia</h5>
               <p>HTML/CSS/JS/API</p>
