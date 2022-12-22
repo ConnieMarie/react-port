@@ -7,13 +7,48 @@ import enthusiast from "../../assets/projects/enthusiast-img.png";
 import textEditor from "../../assets/projects/text-editor-img.png";
 import techieTalk from "../../assets/projects/techietalkss1.png";
 import contactCard from "../../assets/projects/contact-card-img.png";
+import recipe from "../../assets/projects/recipe-img.png";
+import bookSearch from "../../assets/projects/book-search-img.png"
 import gitHub from "../../assets/socials/github-logo.png";
+
 
 function Projects() {
   return (
     <section className="project" id="portfolio">
       <h2 className="pageTitle">Portfolio</h2>
       <div className="project-container">
+      <article className="project-display">
+          <a href="https://github.com/dlope0831/what-is-the-recipe">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
+          <img
+            className="project-img"
+            src={recipe}
+            alt="screenshot of J.A.T.E landing page"
+          />
+          <a href="https://protected-atoll-82762.herokuapp.com/">
+            <div className="project-label">
+              <h5>What is the Recipe?</h5>
+              <p>MERN</p>
+            </div>
+          </a>
+        </article>
+      <article className="project-display">
+          <a href="https://github.com/ConnieMarie/MERN-book-search">
+            <img className="gitHub-repo" src={gitHub} alt="github logo" />
+          </a>
+          <img
+            className="project-img"
+            src={bookSearch}
+            alt="screenshot of J.A.T.E landing page"
+          />
+          <a href="https://rocky-depths-55419.herokuapp.com/">
+            <div className="project-label">
+              <h5>Google Book Search</h5>
+              <p>MERN</p>
+            </div>
+          </a>
+        </article>
       <article className="project-display">
           <a href="https://github.com/ConnieMarie/photo-port">
             <img className="gitHub-repo" src={gitHub} alt="github logo" />
