@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/react-port/static/css/main.64b8cfd0.css",
-    "main.js": "/react-port/static/js/main.8d99aeed.js",
+    "main.js": "/react-port/static/js/main.6ad22e8e.js",
     "static/js/787.510e8dec.chunk.js": "/react-port/static/js/787.510e8dec.chunk.js",
     "static/media/run-buddy_img.png": "/react-port/static/media/run-buddy_img.c83e944eb6c99dcd44b9.png",
     "static/media/self-img.jpg": "/react-port/static/media/self-img.b21de4a4beb984c33714.jpg",
+    "static/media/book-search-img.png": "/react-port/static/media/book-search-img.41a2e1aa07ca3fab278b.png",
+    "static/media/recipe-img.png": "/react-port/static/media/recipe-img.2b1bde66139a294ddc20.png",
     "static/media/oh-snap-img.png": "/react-port/static/media/oh-snap-img.6fe12f446302bc0df5a7.png",
     "static/media/weatherdash-img.png": "/react-port/static/media/weatherdash-img.f397b7eb6810858bc788.png",
     "static/media/contact-card-img.png": "/react-port/static/media/contact-card-img.c4402b97bb9c6a638781.png",
@@ -18,11 +20,11 @@
     "static/media/linkedin_logo.png": "/react-port/static/media/linkedin_logo.68ac41e1459436bfd38f.png",
     "index.html": "/react-port/index.html",
     "main.64b8cfd0.css.map": "/react-port/static/css/main.64b8cfd0.css.map",
-    "main.8d99aeed.js.map": "/react-port/static/js/main.8d99aeed.js.map",
+    "main.6ad22e8e.js.map": "/react-port/static/js/main.6ad22e8e.js.map",
     "787.510e8dec.chunk.js.map": "/react-port/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64b8cfd0.css",
-    "static/js/main.8d99aeed.js"
+    "static/js/main.6ad22e8e.js"
   ]
 }
