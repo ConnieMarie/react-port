@@ -95,7 +95,7 @@ header nav ul li:hover {
 
 .about-me-container {
   margin: auto;
-  width: 12%;
+  width: 20%;
   align-items: center;
 }
 
@@ -114,8 +114,9 @@ header nav ul li:hover {
 }
 
 .about-me-img {
-  height: 300px;
-  width: 200px;
+  display: flex;
+  height: 100%;
+  width: 100%;
   border-radius: 75%;
   align-items: center;
   border: 2px solid var(--secondary);
@@ -235,8 +236,9 @@ header nav ul li:hover {
 
 button {
   font-size: 1rem;
+  font-weight: bold;
   color: var(--secondary);
-  text-shadow: .5px .5px black;
+  text-shadow: 1px 1px black;
   text-decoration: none;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -319,9 +321,16 @@ textarea {
     width: 200px;
   }
 
+  .about-me-container {
+    margin: auto;
+    width: 20%;
+  }
+
   .about-me-img {
-    height: 45vh;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     border-radius: 75%;
     bottom: 40vh;
   }
@@ -334,13 +343,14 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .name-text {
-    padding: 35%;
+    padding: 0%;
   }
 
   .about-me-img {
-    height: 45%;
-    width: 35%;
-    left: 52%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
 
   .project-img {
@@ -351,15 +361,15 @@ textarea {
 
 @media screen and (max-width: 575px) {
   .name-text {
-    padding: 30%;
+    padding: 0%;
     bottom: -12%;
   }
 
   .about-me-img {
-    height: 39%;
-    width: 39%;
-    left: 52%;
-    top: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
 
   #first-project-img {

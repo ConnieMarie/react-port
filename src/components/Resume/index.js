@@ -5,9 +5,9 @@ function Resume() {
     <section>
       <div className="qr-container">
         <h2 className="pageTitle">Resume</h2>
-        <a href="https://drive.google.com/file/d/1UgXYQUj7jurcQuy6Clwm2hLP-CUtMX-Q/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/1hklO9Bfuv0fgHgWYYQtMem9Yoq44VfOO/view?usp=sharing">
         <p>
-          Please click the here to view or download my resume
+          Please click here to view or download my resume
         </p>
         </a>
         
