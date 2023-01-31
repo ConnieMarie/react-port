@@ -1,7 +1,7 @@
 :root {
-  --primary: #210a72;
-  --secondary: #e68244;
-  --tertiary: #fbd4d5;
+  --primary: #001233;
+  --secondary: #CAC0B3;
+  --tertiary: #FF595A;
   --quaternary: #57f1b1;
 }
 
@@ -72,13 +72,13 @@ header nav ul li:hover {
 }
 
 .active {
-  background-color: rgb(251, 212, 213, 0.75);
+  background-color: rgba(255, 89, 90, 0.75);
   border-radius: 3px;
   padding: 0.25rem 1rem;
 }
 
 .name-text {
-  color: #a5d6e4;
+  color: #CAC0B3;
 }
 
 .social-media {
@@ -118,7 +118,7 @@ header nav ul li:hover {
   width: 200px;
   border-radius: 75%;
   align-items: center;
-  border: 2px solid var(--tertiary);
+  border: 2px solid var(--secondary);
 }
 
 .project-container {
@@ -133,7 +133,7 @@ header nav ul li:hover {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid var(--tertiary);
+  border: 2px solid var(--secondary);
 }
 
 .project-label {
@@ -179,7 +179,7 @@ header nav ul li:hover {
   width: 58%;
   position: relative;
   left: 21%;
-  border: 2px solid var(--tertiary);
+  border: 2px solid var(--secondary);
 }
 
 .qr-container p {
@@ -201,7 +201,6 @@ header nav ul li:hover {
   color: var(--secondary);
   width: 80%;
   font-size: larger;
-
   margin: auto;
   padding: 3%;
   margin: auto;
@@ -213,7 +212,6 @@ header nav ul li:hover {
   color: var(--secondary);
   width: 50%;
   font-size: larger;
-
   margin: auto;
   padding: 3%;
 }
@@ -237,6 +235,8 @@ header nav ul li:hover {
 
 button {
   font-size: 1rem;
+  color: var(--secondary);
+  text-shadow: .5px .5px black;
   text-decoration: none;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -269,7 +269,7 @@ label {
   padding: 15px;
   font-weight: bold;
   text-decoration: none;
-  color: var(--tertiary);
+  color: var(--secondary);
   text-shadow: 1px 1px black;
 }
 
@@ -277,7 +277,7 @@ input {
   font-size: 1rem;
   padding: 0.25rem;
   margin: 10px;
-  border: 2px solid var(--tertiary);
+  border: 2px solid var(--secondary);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
@@ -288,7 +288,7 @@ input {
 textarea {
   width: 600px;
   height: 120px;
-  border: 3px solid var(--tertiary);
+  border: 3px solid var(--secondary);
   padding: 5px;
   margin: 10px;
 }
@@ -299,7 +299,7 @@ textarea {
 }
 
 .contact h4 a {
-  color: var(--primary);
+  color: var(--secondary);
   text-shadow: none;
 }
 
