@@ -4,6 +4,7 @@
   "homepage": "https://conniemarie.github.io/react-port",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

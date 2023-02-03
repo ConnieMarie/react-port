@@ -306,8 +306,13 @@ textarea {
 }
 
 .error-text {
-  color: #57f1b1;
+  color: #ff0202;
   padding: 5%;
+}
+
+.success-text {
+  color: #57f1b1;
+  padding-bottom: 5%;
 }
 
 .qr-container {
