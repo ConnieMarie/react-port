@@ -2,16 +2,13 @@ import React from "react";
 
 function Resume() {
   return (
-    <section>
-      <div className="qr-container">
+    <section className="resume">
         <h2 className="pageTitle">Resume</h2>
-        <a href="https://drive.google.com/file/d/1hklO9Bfuv0fgHgWYYQtMem9Yoq44VfOO/view?usp=sharing">
+        <a id="resume-link" href="https://drive.google.com/file/d/1hklO9Bfuv0fgHgWYYQtMem9Yoq44VfOO/view?usp=sharing">
         <p>
-          Please click here to view or download my resume
+          Please click here to view or download my resume.
         </p>
         </a>
-        
-      </div>
       <div className="resume-proficiencies">
       <h3>
         During my studies in the UTSA Bootcamps Full Stack Development course I
