@@ -244,9 +244,9 @@ button:hover {
 }
 
 form {
-  width: 40%;
+  width: 100%;
   padding: 10px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   display: inline-block;
   flex-wrap: wrap;
 }
@@ -267,6 +267,7 @@ input {
   font-size: 1rem;
   padding: 0.25rem;
   margin: 10px;
+  width: 50%;
   border: 2px solid var(--secondary);
   outline: none;
   border-radius: 3px;
@@ -276,14 +277,14 @@ input {
 }
 
 textarea {
-  width: 600px;
-  height: 120px;
+  width: 100%;
   border: 3px solid var(--secondary);
   padding: 5px;
   margin: 10px;
+  border-radius: 3px;
 }
 
-.contact {
+.contact-me {
   color: var(--primary);
   text-shadow: 1px 1px black;
 }
@@ -372,6 +373,10 @@ textarea {
   }
 
   .project-img {
+    width: 100%;
+  }
+
+  input {
     width: 100%;
   }
 }
