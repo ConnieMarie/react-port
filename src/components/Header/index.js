@@ -7,7 +7,7 @@ function Header(props) {
 
   return (
     <header>
-      <div>
+      <div className="name-container">
         <h1>
           <a href="/" className="name-text">
             Constance Strahan

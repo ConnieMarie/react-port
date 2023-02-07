@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  padding: 20px 35px;
+  padding: 20px;
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
@@ -75,10 +75,6 @@ header nav ul li:hover {
   background-color: rgba(255, 89, 90, 0.75);
   border-radius: 3px;
   padding: 0.25rem 1rem;
-}
-
-.name-text {
-  color: #CAC0B3;
 }
 
 .social-media {
@@ -200,10 +196,10 @@ header nav ul li:hover {
 
 .resume-proficiencies p {
   color: var(--secondary);
-  width: 50%;
   font-size: larger;
   margin: auto;
   padding: 3%;
+  text-align: center;
 }
 
 .resume-proficiencies li {
@@ -246,13 +242,12 @@ button:hover {
 form {
   width: 100%;
   padding: 10px;
-  /* margin-right: 10px; */
   display: inline-block;
   flex-wrap: wrap;
 }
 .form-container {
   margin: auto;
-  width: 50%;
+  width: 75%;
 }
 
 label {
@@ -335,7 +330,16 @@ textarea {
   }
 }
 
+@media screen and (max-width: 805px) {
+  header {
+    justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  header {
+    justify-content: space-around;
+  }
   .name-text {
     padding: 0%;
   }
@@ -353,12 +357,20 @@ textarea {
   .project-img {
     width: 100%;
   }
+
+  .form-container {
+    width: 75%
+  }
 }
 
 @media screen and (max-width: 575px) {
   .name-text {
     padding: 0%;
     bottom: -12%;
+  }
+
+  .about-me-container {
+    width: 30%;
   }
 
   .about-me-img {
@@ -377,6 +389,32 @@ textarea {
   }
 
   input {
-    width: 100%;
+    width: 80%;
+  }
+
+  .form-container {
+    width: 95%;
   }
 }
+
+@media screen and (max-width: 496px) {
+  header nav {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  header nav {
+    width: 100%;
+  }
+
+  .name-container {
+    width: 50%
+  }
+
+  .about-me-container {
+    width: 40%;
+  }
+}
+
+
